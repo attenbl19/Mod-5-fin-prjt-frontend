@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bird: MyString
+  cat: MyString
+  dog: MyString
+  small_animal: MyString
+  belongs_to: 
+
+two:
+  bird: MyString
+  cat: MyString
+  dog: MyString
+  small_animal: MyString
+  belongs_to: 
