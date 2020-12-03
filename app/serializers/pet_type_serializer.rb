@@ -1,3 +1,3 @@
 class PetTypeSerializer < ActiveModel::Serializer
-  attributes :id, :bird, :cat, :dog, :small_animal
+  attributes :id, :kind
 end
