@@ -206,6 +206,12 @@ end
     
     end
 
+    ################################ SEEDS FOR PETS ####################################
+
+    9.times do
+        Pet.create!(name: Faker::Name.name, age: rand(12), shop: Shop.all.sample)
+    end
+
     # "https://img.icons8.com/dotty/80/000000/bird.png"
     # "https://img.icons8.com/wired/64/000000/cat.png"
     # "https://img.icons8.com/wired/64/000000/dog.png"

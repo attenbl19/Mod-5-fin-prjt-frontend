@@ -28,16 +28,15 @@ class ShopsController < ApplicationController
 
   # DELETE /shops/1
   def destroy
-    @shop = Shop.find(params[:id])
-    @shop.destroy
-    render json: Shop.all
-  end
+    @business = Business.find(params[:id])
+    @business.destroy
+    render json: @business
 
     # Only allow a trusted parameter "white list" through.
     private
 
-    def store_params
-      params.permit(:storeName, :orders)
+    def shop_params
+      params.require(:shop) permit(:name, :location, :summary, :number, :website, :image)
     end
 end
 
